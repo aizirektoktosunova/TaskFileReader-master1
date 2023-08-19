@@ -1,9 +1,11 @@
+import java.util.List;
+
 public interface CityMethods {
-    City[] readFile();
+    List<City> readFile();
 
-    void printAllCities(City[] cities);
+    void printAllCities(List<City> cities);
 
-    void groupByRegion(City[] cities);
+    void groupByRegion(List<City> cities);
 
     void searchByName(String name);
 }
