@@ -3,8 +3,7 @@
 //  Вытащить данные из текстового файла и записать их к объекту класса City.
 //  Небольшая подсказказка можно использовать метод .split() класса String.
 
-import javax.imageio.IIOException;
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
