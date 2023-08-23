@@ -66,11 +66,17 @@ public class CityMethodsImpl implements CityMethods {
                 count++;
             }
         }
-        for (String s : hashMap.keySet()) {
-            System.out.println(s + hashMap.get(s));
+        for (String d : hashMap.keySet()) {
+            System.out.println("Region : "+d +  " : "+ hashMap.get(d)+" есть");
         }
-    }
 
+//cities= new LinkedList<>(readfile));
+//Map<String,Integer> map=new TreeMap<>();
+//int count=0;
+//for(int i =1 ; i<cities.size; i++){
+  //  if(cities.get(i-1).getRegion().equals(cities.get(i).getRegion())!){
+   //     hashMap.put(cities.get(i-1).getRegion())
+    }
 
 //        System.out.println(cities.get(0).getRegion());
 //        for (int i = 1; i < cities.size(); i++) {        System.out.println(" City: " +
