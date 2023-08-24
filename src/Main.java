@@ -7,10 +7,10 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         CityMethodsImpl cityMethods = new CityMethodsImpl("city_ru.csv");
-        //    System.out.println(cityMethods.readFile());
-    //    cityMethods.printAllCities(cityMethods.readFile());
-        cityMethods.groupByRegion(cityMethods.readFile());
-        cityMethods.searchByName("Иркутская");
+        System.out.println(cityMethods.readFile());
+//        cityMethods.printAllCities(cityMethods.readFile());
+//         cityMethods.groupByRegion(cityMethods.readFile());
+//        cityMethods.searchByName("Чита");
 
 
 //        CityMethodsImpl cityMethods = new CityMethodsImpl("city.ru.csv");

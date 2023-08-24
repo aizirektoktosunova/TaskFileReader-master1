@@ -13,21 +13,21 @@ import java.util.*;
 //  После того как ты закончил предыдущий метод можешь приступить к следуещему.
 //  Вся суть printAllCities() заключается в том, что надо вывести все города на консоль.
 public class CityMethodsImpl implements CityMethods {
-    private String name;
+    private String name1;
 
-    public CityMethodsImpl(String name) {
-        this.name = name;
+    public CityMethodsImpl(String name1) {
+        this.name1 = name1;
     }
 
     @Override
     public List<City> readFile() throws FileNotFoundException {
-        FileReader reader = new FileReader(name);
+        FileReader reader = new FileReader(name1);
         Scanner scanner = new Scanner(reader);
         List<City> cities = new ArrayList<>();
         while (scanner.hasNextLine()) {
             String words = scanner.nextLine();
             List<String> cityList = List.of(words.split(";"));
-            System.out.println(cityList);
+//            System.out.println(cityList.get(1));
             City city = new City();
             city.setId(Integer.parseInt(cityList.get(0)));
             city.setName(cityList.get(1));
@@ -36,10 +36,9 @@ public class CityMethodsImpl implements CityMethods {
             city.setPopulation(Integer.parseInt(cityList.get(4)));
             try {
                 city.setFoundation((cityList.get(5)));
-
-
             } catch (ArrayIndexOutOfBoundsException a) {
                 city.setFoundation(null);
+                System.out.println(a.getMessage());
             }
             cities.add(city);
         }
